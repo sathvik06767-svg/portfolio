@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A. Sathvik Reddy — B.Tech AI & ML Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter, Plus Jakarta Sans & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        card: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        ink: '#111827',
+                        muted: '#4B5563',
+                        surface: '#F9FAFB',
+                        line: '#E5E7EB',
+                        accent: '#1E293B',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-ink font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- =========================================================
+         NAVIGATION BAR (Sticky Minimal Header)
+    ========================================================== -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-line">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Name & Student ID -->
+                <a href="#home" class="flex items-center gap-3 group">
+                    <span class="w-8 h-8 rounded-lg bg-accent text-white text-xs font-semibold flex items-center justify-center tracking-wide">
+                        SR
+                    </span>
+                    <div class="flex items-baseline gap-2.5">
+                        <span class="font-semibold text-ink text-sm sm:text-base tracking-tight">A. Sathvik Reddy</span>
+                        <span class="hidden sm:inline-block font-mono text-xs text-muted bg-surface border border-line px-2 py-0.5 rounded">
+                            2026BTAI203
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-muted">
+                    <a href="#home" class="hover:text-ink transition-colors">Home</a>
+                    <a href="#about" class="hover:text-ink transition-colors">About</a>
+                    <a href="#skills" class="hover:text-ink transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-ink transition-colors">Projects</a>
+                    <a href="#achievements" class="hover:text-ink transition-colors">Achievements</a>
+                    <a href="#contact" class="px-3.5 py-1.5 rounded-lg bg-accent text-white hover:bg-slate-800 transition-colors">
+                        Contact
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-btn" aria-label="Toggle navigation menu" class="md:hidden p-2 rounded-lg text-muted hover:text-ink hover:bg-surface border border-transparent hover:border-line transition-colors">
+                    <i class="fa-solid fa-bars text-base" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-line px-5 py-4 space-y-2">
+            <a href="#home" class="mobile-nav-link block py-2 text-sm font-medium text-muted hover:text-ink">Home</a>
+            <a href="#about" class="mobile-nav-link block py-2 text-sm font-medium text-muted hover:text-ink">About Me</a>
+            <a href="#skills" class="mobile-nav-link block py-2 text-sm font-medium text-muted hover:text-ink">Skills</a>
+            <a href="#projects" class="mobile-nav-link block py-2 text-sm font-medium text-muted hover:text-ink">Projects</a>
+            <a href="#achievements" class="mobile-nav-link block py-2 text-sm font-medium text-muted hover:text-ink">Achievements</a>
+            <a href="#contact" class="mobile-nav-link block mt-2 py-2.5 text-center rounded-lg bg-accent text-white text-sm font-medium">Contact</a>
+        </div>
+    </header>
+
+    <!-- =========================================================
+         MAIN CONTENT
+    ========================================================== -->
+    <main class="max-w-5xl mx-auto px-5 sm:px-8">
+
+        <!-- 1. HOME SECTION -->
+        <section id="home" class="py-20 sm:py-28 border-b border-line scroll-mt-16">
+            <div class="max-w-3xl space-y-6">
+                <!-- Academic Status & Student ID Pill -->
+                <div class="inline-flex flex-wrap items-center gap-2 text-xs sm:text-sm text-muted bg-surface border border-line rounded-full px-3.5 py-1.5">
+                    <span class="w-2 h-2 rounded-full bg-accent"></span>
+                    <span>B.Tech AI &amp; ML Undergraduate &bull; Joy University, Vadakangulam</span>
+                    <span class="font-mono text-xs text-ink font-medium pl-1 border-l border-line">ID: 2026BTAI203</span>
+                </div>
+
+                <!-- Full Name -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink leading-[1.12]">
+                    A. Sathvik Reddy
+                </h1>
+
+                <!-- Crisp Professional Introduction -->
+                <p class="text-base sm:text-lg text-muted leading-relaxed max-w-2xl">
+                    First-year Artificial Intelligence &amp; Machine Learning engineering student at Joy University, Vadakangulam. Prior to university, I completed my Class 10 at AGIS and Classes 11 &amp; 12 at Narayana, Nallakunta.
+                </p>
+
+                <!-- Minimal CTA Buttons -->
+                <div class="flex flex-wrap items-center gap-3 pt-2">
+                    <a href="#projects" class="px-5 py-2.5 rounded-lg bg-accent text-white text-sm font-medium hover:bg-slate-800 transition-colors">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-lg bg-white text-ink border border-line text-sm font-medium hover:bg-surface transition-colors">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section id="about" class="py-20 border-b border-line scroll-mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+                <div class="md:col-span-4">
+                    <p class="font-mono text-xs uppercase tracking-wider text-muted mb-2">01 / Profile</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-ink">About Me</h2>
+                </div>
+
+                <div class="md:col-span-8 space-y-6">
+                    <p class="text-base text-muted leading-relaxed">
+                        I am currently pursuing my <strong class="font-semibold text-ink">Bachelor of Technology (B.Tech) in Artificial Intelligence &amp; Machine Learning</strong> at <strong class="font-semibold text-ink">Joy University, Vadakangulam</strong> (Student ID: <span class="font-mono text-sm text-ink">2026BTAI203</span>). Prior to university, I completed my Class 10 at <strong class="font-semibold text-ink">AGIS</strong> and Classes 11 &amp; 12 at <strong class="font-semibold text-ink">Narayana, Nallakunta</strong>.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-2">
+                        <div class="p-5 rounded-xl bg-surface border border-line font-card">
+                            <h3 class="text-sm font-semibold text-ink mb-2 tracking-tight">Interests</h3>
+                            <p class="text-sm text-muted leading-relaxed">
+                                AI/ML systems, full-stack web development, embedded hardware &amp; retro games, fitness conditioning, and psytrance music.
+                            </p>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-surface border border-line font-card">
+                            <h3 class="text-sm font-semibold text-ink mb-2 tracking-tight">Learning Goals &amp; Career Aspirations</h3>
+                            <p class="text-sm text-muted leading-relaxed">
+                                Developing scalable AI-driven applications, strengthening software engineering fundamentals, and contributing to impactful real-world technology solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SKILLS SECTION -->
+        <section id="skills" class="py-20 border-b border-line scroll-mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+                <div class="md:col-span-4">
+                    <p class="font-mono text-xs uppercase tracking-wider text-muted mb-2">02 / Capabilities</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-ink">Skills</h2>
+                </div>
+
+                <div class="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <!-- Programming Languages -->
+                    <div class="p-6 rounded-xl bg-surface border border-line font-card">
+                        <h3 class="text-sm font-semibold text-ink mb-3.5 tracking-tight">Programming Languages</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs sm:text-sm font-medium px-3 py-1.5 rounded-lg bg-white border border-line text-ink">Python</span>
+                            <span class="text-xs sm:text-sm font-medium px-3 py-1.5 rounded-lg bg-white border border-line text-ink">HTML/CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Other Relevant Skills -->
+                    <div class="p-6 rounded-xl bg-surface border border-line font-card">
+                        <h3 class="text-sm font-semibold text-ink mb-3.5 tracking-tight">Other Relevant Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs sm:text-sm font-medium px-3 py-1.5 rounded-lg bg-white border border-line text-ink">Problem Solving</span>
+                            <span class="text-xs sm:text-sm font-medium px-3 py-1.5 rounded-lg bg-white border border-line text-ink">Embedded Systems &amp; Hardware Prototyping</span>
+                            <span class="text-xs sm:text-sm font-medium px-3 py-1.5 rounded-lg bg-white border border-line text-ink">Git &amp; Version Control</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PROJECTS SECTION -->
+        <section id="projects" class="py-20 border-b border-line scroll-mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+                <div class="md:col-span-4">
+                    <p class="font-mono text-xs uppercase tracking-wider text-muted mb-2">03 / Selected Work</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-ink">Projects</h2>
+                </div>
+
+                <div class="md:col-span-8 space-y-6">
+                    <!-- Project 1 -->
+                    <article class="p-6 sm:p-7 rounded-xl bg-surface border border-line hover:border-slate-300 transition-colors font-card">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="font-mono text-xs text-muted">24-Hour Hackathon &bull; Team NO BUGZ</span>
+                            <span class="font-mono text-xs px-2.5 py-0.5 rounded bg-white border border-line text-ink">Full-Stack &amp; AI</span>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold text-ink mb-2.5 tracking-tight">
+                            AI-Powered Student Skill-Gap Analysis &amp; Personalized Career Roadmap
+                        </h3>
+                        <p class="text-sm sm:text-base text-muted leading-relaxed mb-4">
+                            Built collaboratively with <strong class="font-medium text-ink">Team NO BUGZ</strong> alongside teammates <strong class="font-medium text-ink">Sri Charan</strong> and <strong class="font-medium text-ink">Jothesh</strong> during a 24-hour hackathon. Analyzes student skill gaps against target roles and generates tailored learning roadmaps.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white border border-line text-muted">Python</span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white border border-line text-muted">HTML/CSS</span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white border border-line text-muted">AI/ML</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="p-6 sm:p-7 rounded-xl bg-surface border border-line hover:border-slate-300 transition-colors font-card">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="font-mono text-xs text-muted">Personal Hardware Build</span>
+                            <span class="font-mono text-xs px-2.5 py-0.5 rounded bg-white border border-line text-ink">Embedded Systems</span>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold text-ink mb-2.5 tracking-tight">
+                            Microcontroller Retro Gaming Console — Tetris &amp; Pac-Man
+                        </h3>
+                        <p class="text-sm sm:text-base text-muted leading-relaxed mb-4">
+                            Hardware and software implementation of classic <strong class="font-medium text-ink">Tetris</strong> and <strong class="font-medium text-ink">Pac-Man</strong> arcade games using Arduino microcontrollers, real-time game loops, and responsive digital push-button controls.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white border border-line text-muted">Arduino</span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white border border-line text-muted">Embedded Hardware</span>
+                            <span class="text-xs font-medium px-2.5 py-1 rounded bg-white border border-line text-muted">Digital I/O</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="py-20 border-b border-line scroll-mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+                <div class="md:col-span-4">
+                    <p class="font-mono text-xs uppercase tracking-wider text-muted mb-2">04 / Milestones</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-ink">Achievements</h2>
+                </div>
+
+                <div class="md:col-span-8">
+                    <ul class="divide-y divide-line border border-line rounded-xl bg-surface overflow-hidden font-card">
+                        <li class="p-5 sm:p-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1.5">
+                                <h3 class="text-base font-semibold text-ink tracking-tight">24-Hour Hackathon Participant &amp; Builder</h3>
+                                <span class="font-mono text-xs text-muted">Team NO BUGZ &bull; September 2026</span>
+                            </div>
+                            <p class="text-sm text-muted leading-relaxed">
+                                Collaborated under tight deadlines to ideate, engineer, and present a working full-stack AI career roadmap prototype.
+                            </p>
+                        </li>
+
+                        <li class="p-5 sm:p-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1.5">
+                                <h3 class="text-base font-semibold text-ink tracking-tight">B.Tech AI/ML Academic Standing</h3>
+                                <span class="font-mono text-xs text-muted">Joy University &bull; 2026BTAI203</span>
+                            </div>
+                            <p class="text-sm text-muted leading-relaxed">
+                                Actively completing core first-year undergraduate coursework in Python programming, computational thinking, and artificial intelligence fundamentals.
+                            </p>
+                        </li>
+
+                        <li class="p-5 sm:p-6">
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1.5">
+                                <h3 class="text-base font-semibold text-ink tracking-tight">Embedded Hardware &amp; Retro Game Prototyping</h3>
+                                <span class="font-mono text-xs text-muted">Independent Build</span>
+                            </div>
+                            <p class="text-sm text-muted leading-relaxed">
+                                Designed and built playable microcontroller arcade games with custom push-button hardware interfaces outside regular classroom assignments.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CONTACT SECTION -->
+        <section id="contact" class="py-20 scroll-mt-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+                <div class="md:col-span-4">
+                    <p class="font-mono text-xs uppercase tracking-wider text-muted mb-2">05 / Connect</p>
+                    <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-ink">Contact</h2>
+                </div>
+
+                <div class="md:col-span-8 space-y-6">
+                    <p class="text-base text-muted leading-relaxed">
+                        Feel free to reach out for academic collaborations, hackathon teams, or project discussions.
+                    </p>
+
+                    <!-- Email Card with Copy Button -->
+                    <div class="p-5 sm:p-6 rounded-xl bg-surface border border-line flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-card">
+                        <div>
+                            <span class="block font-mono text-xs text-muted mb-1">GMAIL / EMAIL ADDRESS</span>
+                            <a href="mailto:sathvik.067.67@gmail.com" id="email-text" class="text-sm sm:text-base font-semibold text-ink hover:underline">
+                                sathvik.067.67@gmail.com
+                            </a>
+                        </div>
+                        <button type="button" onclick="copyEmail()" class="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-white border border-line text-sm font-medium text-ink hover:bg-slate-100 transition-colors shrink-0">
+                            <i class="fa-regular fa-copy text-xs text-muted" id="copy-icon"></i>
+                            <span id="copy-label">Copy Email</span>
+                        </button>
+                    </div>
+
+                    <!-- Social / Professional Logo Links (Raw URLs hidden) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 font-card">
+                        <a href="https://github.com/sathvik06767-svg" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="p-4 rounded-xl bg-white border border-line hover:bg-surface hover:border-slate-300 transition-colors flex items-center justify-between group">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-lg bg-surface border border-line flex items-center justify-center text-ink group-hover:bg-accent group-hover:text-white transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <span class="text-sm font-semibold text-ink">GitHub</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs text-muted group-hover:text-ink transition-colors"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/a-sathvik-reddy-b20147410/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BoQyP7W1QRNSfhTyMcK8YCQ%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="p-4 rounded-xl bg-white border border-line hover:bg-surface hover:border-slate-300 transition-colors flex items-center justify-between group">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-lg bg-surface border border-line flex items-center justify-center text-ink group-hover:bg-accent group-hover:text-white transition-colors">
+                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                                    </svg>
+                                </div>
+                                <span class="text-sm font-semibold text-ink">LinkedIn</span>
+                            </div>
+                            <i class="fa-solid fa-arrow-up-right-from-square text-xs text-muted group-hover:text-ink transition-colors"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+    <footer class="border-t border-line bg-surface">
+        <div class="max-w-5xl mx-auto px-5 sm:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-muted">
+            <p>&copy; 2026 A. Sathvik Reddy (<span class="font-mono">2026BTAI203</span>) &bull; Joy University, Vadakangulam</p>
+            <div class="flex items-center gap-4">
+                <div class="font-card rounded-lg border border-gray-200 bg-white px-3.5 py-1.5 text-xs font-medium text-gray-600 shadow-2xs">
+                    Credits: <span class="font-semibold text-ink">Gemini</span>
+                </div>
+                <a href="#home" class="font-medium text-ink hover:underline">Back to top &uarr;</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Subtle Toast Notification for Copy Feedback -->
+    <div id="toast" role="status" aria-live="polite" class="fixed bottom-6 right-6 z-50 hidden items-center gap-2.5 px-4 py-3 rounded-lg bg-accent text-white text-sm font-medium shadow-lg">
+        <i class="fa-solid fa-check text-xs"></i>
+        <span>Email copied to clipboard</span>
+    </div>
+
+    <!-- =========================================================
+         JAVASCRIPT (Mobile Menu & Clipboard Toast)
+    ========================================================== -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            mobileMenu.classList.toggle('hidden', !isHidden);
+            menuIcon.className = isHidden ? 'fa-solid fa-xmark text-base' : 'fa-solid fa-bars text-base';
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-base';
+            });
+        });
+
+        // Copy Email with iFrame-safe execCommand & Toast Feedback
+        let toastTimeout;
+        function copyEmail() {
+            const emailText = document.getElementById('email-text').innerText.trim();
+            const tempInput = document.createElement('input');
+            tempInput.value = emailText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Button visual update
+            const copyIcon = document.getElementById('copy-icon');
+            const copyLabel = document.getElementById('copy-label');
+            copyIcon.className = 'fa-solid fa-check text-xs text-ink';
+            copyLabel.textContent = 'Copied';
+
+            // Show toast notification
+            const toast = document.getElementById('toast');
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                copyIcon.className = 'fa-regular fa-copy text-xs text-muted';
+                copyLabel.textContent = 'Copy Email';
+                toast.classList.add('hidden');
+                toast.classList.remove('flex');
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
